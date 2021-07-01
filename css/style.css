@@ -175,14 +175,16 @@ html,body{
     align-items: center;
     border: 3px solid #C4C4C4;
 }
-.narrative__title{
-    padding: 60px 0px 40px 0px;
-    position: relative;
+.title{
     font-family: "PlayfairdDisplay";
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
     line-height: 150%;
+}
+.narrative__title{
+    padding: 60px 0px 40px 0px;
+    position: relative;
     /* border-bottom: 1px solid #FFFFFF; */
     /* border-width: 160px; */
 }
@@ -248,9 +250,9 @@ html,body{
 .vinecard__title{
     padding: 15px 0px 30px 0px;
     position: relative;
-    font-family: "PlayfairdDisplay";
+    /* font-family: "PlayfairdDisplay";
     font-weight: 700;
-    font-size: 36px;
+    font-size: 36px; */
     /* line-height: 54px; */
 }
 .vinecard__title::after{
@@ -260,7 +262,7 @@ html,body{
     width: 160px;
     background: #282828;
     bottom: 0;
-    left: 15%;
+    left: 80px;
     margin-left: -80px;
 }
 .vinecard__body{
@@ -276,6 +278,7 @@ html,body{
     flex-direction: column;
     padding: 15px 0px 0px 0px;
 }
+/* --Контент списка дегустации / Degustation list content-- */
 .degustation__item{
     display: flex;
 }
@@ -283,24 +286,43 @@ html,body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    padding: 5px 0px 15px 30px;
+}
+.degustation__body::before{
+    /* display: none; */
+    content: '';
+    position: absolute;
+    width: 0.5px;
+    height: 76px;
+    background: #282828;
+    left: 0px;
 }
 .vine__year{
     font-family: "Montserrat-medium";
     font-weight: 400;
-    padding: 26px 24px;
+    padding: 31px 24px 26px 24px;
     align-self: center;
 }
 .vine__name{
     font-family: "PlayfairdDisplay";
     font-weight: bold;
     font-size: 18px;
-    padding: 5px 0px 2.5px 0px;
+    padding: 0px 0px 2.5px 0px;
 }
 .vine__description{
     font-family: "Montserrat-medium";
     font-weight: 400;
-    padding: 2.5px 0px 15px 0px;
+    padding: 2.5px 0px 0px 0px;
 }
+/* --Модификаторы списка дегустации / Degustation list modificator-- */
+.innerside__item{
+    border-top: 1px solid #282828;
+    border-bottom: 1px solid #282828;
+}
+
+
+
 
 /* --Блок слайдера-- */
 .slider__block{
