@@ -373,6 +373,7 @@ html,body{
     size: 16px;
     line-height: 24px;
     text-align: center;
+    padding: 0 25px;
 }
 .form__text::before{
     content: '';
@@ -392,6 +393,20 @@ html,body{
     top: -37px;
     left: 310px;
     background-color: #282828;
+}
+.degustation-block__image_1{
+    position: absolute;
+    z-index: 3;
+    background-color: #282828;
+    left: -30px;
+    top: -69px;
+}
+.degustation-block__image_2{
+    position: absolute;
+    z-index: 3;
+    background-color: #282828;
+    right: -53px;
+    top: -65px;
 }
 /* ----Начало поля форм ----- */
 .form-input__row{
